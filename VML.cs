@@ -76,6 +76,14 @@ namespace IntelMKL
         [DllImport(Controls.VML_DLL, CallingConvention = CallingConvention.Cdecl, EntryPoint = "_vmldExp")]
         public static extern void _vmldExp(int n, double [] a, double [] r);
         /// <summary>
+        /// r<-ln(x)
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="a"></param>
+        /// <param name="r"></param>
+        [DllImport(Controls.VML_DLL, CallingConvention = CallingConvention.Cdecl, EntryPoint = "_vmldLn")]
+        public static extern void _vmldLn(int n, double[] a, double[] r);
+        /// <summary>
         /// r<-Cos(a)
         /// </summary>
         /// <param name="n"></param>

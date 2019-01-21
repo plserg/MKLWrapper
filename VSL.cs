@@ -54,17 +54,17 @@ namespace IntelMKL
 
         public class IntelMKLRandomNumberStream : IDisposable
         {
-            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl, EntryPoint = "vslNewStream", 
-                ExactSpelling = true, SetLastError = false)]
+            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true, SetLastError = false)]
             internal static extern int vslNewStream(ref IntPtr stream, int brng, int seed);
 
-            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl,
-                ExactSpelling = true, SetLastError = false)]
+            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl,ExactSpelling = true, SetLastError = false)]
             internal static extern int vslNewStreamEx(ref IntPtr stream, int brng, int nparams, uint[] parameters);
 
-            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl,
-                ExactSpelling = true, SetLastError = false)]
+            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl,ExactSpelling = true, SetLastError = false)]
             internal static extern int vslDeleteStream(ref IntPtr stream);
+
+            [DllImport(Controls.VSL_DLL, CallingConvention = CallingConvention.Cdecl,ExactSpelling = true, SetLastError = false)]
+            internal static extern int vslCopyStream(ref IntPtr stream_tgt, IntPtr stream_src);
 
             public readonly IntPtr RandomStream;
 
@@ -111,6 +111,12 @@ namespace IntelMKL
                 int status = vslDeleteStream(ref stream);
                 if (status != 0) throw new Exception("failed to delete stream.");
             }
+            #region public-methods-copy-streams
+            public static void CopyStream(ref IntPtr stream_tgt, IntPtr stream_src)
+            {
+                vslCopyStream(ref stream_tgt, stream_src);
+            }
+
             public static void DeleteStreams(IntPtr [] streams)
             {
                 for(int i=0;i<streams.Length;++i)
@@ -120,6 +126,7 @@ namespace IntelMKL
                     streams[i] = IntPtr.Zero;
                 }
             }
+            #endregion
         }
 
         #region random_number_generators
