@@ -1,9 +1,0 @@
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\obj\Debug\netstandard2.0\MKLWrapper.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\obj\Debug\netstandard2.0\MKLWrapper.AssemblyInfoInputs.cache
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\obj\Debug\netstandard2.0\MKLWrapper.AssemblyInfo.cs
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\obj\Debug\netstandard2.0\MKLWrapper.csproj.CoreCompileInputs.cache
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\bin\Debug\netstandard2.0\MKLWrapper.deps.json
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\bin\Debug\netstandard2.0\MKLWrapper.dll
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\bin\Debug\netstandard2.0\MKLWrapper.pdb
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\obj\Debug\netstandard2.0\MKLWrapper.dll
-C:\Users\plserg\source\repos\MKLWrapper\MKLWrapper\obj\Debug\netstandard2.0\MKLWrapper.pdb
