@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vY8W9Dn5WokXC7dASpEQbTyyYxmrj+iHPLILzyA6sEFNQ/Sezpk2idBIH2OwhWWKOp1W3icFwOvJ3HKtzDGtUg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\plserg\\source\\repos\\MKLWrapper\\MKLWrapper\\MKLWrapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\plserg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\plserg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
