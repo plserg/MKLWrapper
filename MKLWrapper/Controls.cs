@@ -13,7 +13,7 @@ namespace IntelMKL
         /// <summary>
         /// oneAPI/SIMD vector library 
         /// </summary>
-        public const string VML_DLL = "mkl_avx2.2.dll";
+        public const string VML_DLL = "mkl_rt.2.dll";
         /// <summary>
         /// name of the stats MKL 
         /// </summary>
